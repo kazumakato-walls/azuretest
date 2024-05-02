@@ -1,6 +1,6 @@
-import { Autocomplete, Group, Burger, rem, Drawer, TextInput, ActionIcon } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { IconSearch } from '@tabler/icons-react';
+import {TextInput, ActionIcon } from '@mantine/core';
+//import { useDisclosure } from '@mantine/hooks';
+//import { IconSearch } from '@tabler/icons-react';
 // import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './Header.module.css';
 import { IoSearch } from 'react-icons/io5';

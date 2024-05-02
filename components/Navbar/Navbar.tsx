@@ -1,18 +1,11 @@
 import {
-  TextInput,
-  Code,
-  UnstyledButton,
-  Badge,
   Text,
   Group,
-  ActionIcon,
-  Tooltip,
-  rem,
   Button,
   NavLink,
 } from '@mantine/core';
-import { IconGauge, IconFingerprint } from '@tabler/icons-react';
-import { IconBulb, IconUser, IconCheckbox, IconSearch, IconPlus } from '@tabler/icons-react';
+//import { IconGauge, IconFingerprint } from '@tabler/icons-react';
+//import { IconBulb, IconUser, IconCheckbox, IconSearch, IconPlus } from '@tabler/icons-react';
 import { IoSettingsOutline, IoHomeSharp } from 'react-icons/io5';
 //   import { UserButton } from '../UserButton/UserButton';
 import classes from './Navbar.module.css';
