@@ -48,9 +48,9 @@ export function HeaderSearch() {
       w="250"
     />
 
-    <Drawer position="right" title="Authentication">
+    {/* <Drawer position="right" title="Authentication"> */}
         {/* Drawer content */}
-    </Drawer>
+    {/* </Drawer> */}
     <ActionIcon variant="default" size="xl" radius="md" aria-label="Settings">
         <IoSettingsOutline />
     </ActionIcon>
