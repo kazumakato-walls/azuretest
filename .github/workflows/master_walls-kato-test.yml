@@ -29,6 +29,7 @@ jobs:
       - name: Copy artifact for deployment job
         run: |
           mkdir deploy
+          cp -r ./.next/standalone/. ./deploy
           cp -r ./public ./deploy
           cp -r ./.next/static/. ./deploy/.next/static
 
