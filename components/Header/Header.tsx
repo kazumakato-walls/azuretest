@@ -1,11 +1,10 @@
-import { Autocomplete, Group, Burger, rem,Drawer,TextInput,ActionIcon } from '@mantine/core';
+import { Autocomplete, Group, Burger, rem, Drawer, TextInput, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconSearch } from '@tabler/icons-react';
 // import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './Header.module.css';
-import { IoSearch } from "react-icons/io5";
-import { IoSettingsOutline } from "react-icons/io5";
-
+import { IoSearch } from 'react-icons/io5';
+import { IoSettingsOutline } from 'react-icons/io5';
 
 const links = [
   { link: '/about', label: 'Features' },
@@ -15,7 +14,7 @@ const links = [
 ];
 
 export function HeaderSearch() {
-//   const [opened, { close, open }] = useDisclosure(false);
+  //   const [opened, { close, open }] = useDisclosure(false);
 
   const items = links.map((link) => (
     <a
@@ -31,35 +30,20 @@ export function HeaderSearch() {
   return (
     <header className={classes.header}>
       <div className={classes.inner}>
-
-    ファイルパス：
-      <TextInput
-      placeholder="Box/Walls/管理/"
-      value="Box/Walls/管理/"
-      size="sm"
-      w="400"
-    />
-    <div style={{ flexGrow: 1 }}></div>
-    <TextInput
-      leftSection={<IoSearch />}
-      placeholder="検索"
-      size="sm"
-      radius="lg"
-      w="250"
-    />
-
-    {/* <Drawer position="right" title="Authentication"> */}
+        ファイルパス：
+        <TextInput placeholder="Box/Walls/管理/" value="Box/Walls/管理/" size="sm" w="400" />
+        <div style={{ flexGrow: 1 }}></div>
+        <TextInput leftSection={<IoSearch />} placeholder="検索" size="sm" radius="lg" w="250" />
+        {/* <Drawer position="right" title="Authentication"> */}
         {/* Drawer content */}
-    {/* </Drawer> */}
-    <ActionIcon variant="default" size="xl" radius="md" aria-label="Settings">
-        <IoSettingsOutline />
-    </ActionIcon>
-
+        {/* </Drawer> */}
+        <ActionIcon variant="default" size="xl" radius="md" aria-label="Settings">
+          <IoSettingsOutline />
+        </ActionIcon>
         {/* <Group> */}
-          {/* <Burger opened={opened} onClick={open} size="sm" hiddenFrom="sm" /> */}
-          {/* <MantineLogo size={28} /> */}
+        {/* <Burger opened={opened} onClick={open} size="sm" hiddenFrom="sm" /> */}
+        {/* <MantineLogo size={28} /> */}
         {/* </Group> */}
-
         {/* <Group>
           <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
             {items}
