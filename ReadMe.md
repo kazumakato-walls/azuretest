@@ -1,9 +1,37 @@
-これはJWT認証をFastAPIのみで行うサンプルコードです。  
-起動前にmigrate_db.pyを実行し、データベースの生成及びマイグレーションをして下さい。  
-SQLite3でのデータベースが作成されます。  
-コマンド: py -m migrate_db  
-ローカルで起動する場合はuvicornで起動して下さい。  
-コマンド: py -m uvicorn main:app --reload  
-認証に必要なデータ登録はSwaggerUI上で実行して下さい。  
-※URL末尾に/docsを付けて移動し、'/auth/create/user'からis_adminをtrueにして管理者を作成します。  
-SwaggerUI上では右上のAuthorizeでユーザー名とパスワード名を入力してログインをする事で認証します。  
+# Mantine Next.js template
+
+This is a template for [Next.js](https://nextjs.org/) app router + [Mantine](https://mantine.dev/).
+If you want to use pages router instead, see [next-pages-template](https://github.com/mantinedev/next-pages-template).
+
+## Features
+
+This template comes with the following features:
+
+- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+
+## npm scripts
+
+### Build and dev scripts
+
+- `dev` – start dev server
+- `build` – bundle application for production
+- `analyze` – analyzes application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+
+### Testing scripts
+
+- `typecheck` – checks TypeScript types
+- `lint` – runs ESLint
+- `prettier:check` – checks files with Prettier
+- `jest` – runs jest tests
+- `jest:watch` – starts jest watch
+- `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
+
+### Other scripts
+
+- `storybook` – starts storybook dev server
+- `storybook:build` – build production storybook bundle to `storybook-static`
+- `prettier:write` – formats all files with Prettier
