@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { useDisclosure, useCounter } from '@mantine/hooks';
+import { useCounter } from '@mantine/hooks';
 import {
   Table,
   Checkbox,
@@ -9,14 +9,13 @@ import {
   FileButton,
   Text,
   Button,
-  Modal,
   Badge,
   Grid,
   ActionIcon,
   Drawer,
 } from '@mantine/core';
 import { FiDownload } from 'react-icons/fi';
-import { MdDeleteForever } from 'react-icons/md';
+//import { MdDeleteForever } from 'react-icons/md';
 import classes from './Storage.module.css';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 
