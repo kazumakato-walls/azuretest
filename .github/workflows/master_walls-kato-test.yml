@@ -24,23 +24,8 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          yarn run build --if-present
+          npm run build
 
-      - name: Copy artifact for deployment job
-        run: |
-          mkdir deploy
-          cp -r ./.next/standalone/. ./deploy
-          cp -r ./public ./deploy
-          cp -r ./.next/static/. ./deploy/.next/static
-
-      - name: Zip artifact for deployment
-        run: zip release.zip ./deploy -r
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
-        with:
-          name: node-app
-          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
