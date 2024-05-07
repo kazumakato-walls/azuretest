@@ -16,5 +16,3 @@ export default withBundleAnalyzer({
   output: 'standalone'
 
 });
-
-module.exports = nextConfig;
